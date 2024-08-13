@@ -22,4 +22,4 @@ jobs:
     if: (github.actor != 'dependabot[bot]')
     steps:
       - uses: actions/checkout@v4
-      - run: SEMGREP_LOG_SRCS=secrets,git semgrep ci --secrets --historical-secrets --verbose --output=historical-scan-verbose.log
+      - run: SEMGREP_LOG_SRCS=secrets,git semgrep ci --secrets --historical-secrets --verbose
